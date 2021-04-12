@@ -1,71 +1,138 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Squawk: Search History Noisifier</title>
-  <meta name="description" content="Fill your Google Search History to save others' lives.">
-  <link rel="canonical" href="https://search.squawk.cc/">
-  <link rel="stylesheet" href="squawk.css">
-  <script src="search.squawk.js?1"></script> 
-  <meta property="og:locale" content="en_AU" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="search.squawk.cc" />
-  <meta property="og:description" content="Creating noise-as-a-service, as an act of civil disobedience, that attacks the ability to profile at-risk groups through search histories. https://search.squawk.cc/" />
-  <meta property="og:url" content="https://search.squawk.cc" />
-  <meta property="og:site_name" content="search.squawk.cc" />
-  <meta property="og:image" content="https://search.squawk.cc/logo.png" />
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:description" content="Creating noise-as-a-service, as an act of civil disobedience, that attacks the ability to profile at-risk groups through search histories." />
-  <meta name="twitter:title" content="search.squawk.cc: creating noise-as-a-service, as an act of civil disobedience, that attacks the wholesale surveillance of Australian citizens under the data retention program." />
-  <meta name="twitter:site" content="@squawkcc"/>
-  <meta name="twitter:domain" content="search.squawk.cc"/>
-  <meta name="twitter:image" content="https://search.squawk.cc/logo.png" />
-</head>
-<body>
-  <div class="pageouter"><div class="pageinner">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Squawk: Search History Noisifier</title>
+    <meta
+      name="description"
+      content="Fill your Google Search History to save others' lives."
+    />
+    <link rel="canonical" href="https://squawk-search.netlify.app/" />
+    <link rel="stylesheet" href="squawk.css" />
+    <script src="search.squawk.js?1"></script>
+    <meta property="og:locale" content="en_AU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="search.squawk.cc" />
+    <meta
+      property="og:description"
+      content="Creating noise-as-a-service, as an act of civil disobedience, that attacks the ability to profile at-risk groups through search histories. https://squawk-search.netlify.app/"
+    />
+    <meta property="og:url" content="https://squawk-search.netlify.app" />
+    <meta property="og:site_name" content="search.squawk.cc" />
+    <meta
+      property="og:image"
+      content="https://squawk-search.netlify.app/logo.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:description"
+      content="Creating noise-as-a-service, as an act of civil disobedience, that attacks the ability to profile at-risk groups through search histories."
+    />
+    <meta
+      name="twitter:title"
+      content="search.squawk.cc: creating noise-as-a-service, as an act of civil disobedience, that attacks the wholesale surveillance of Australian citizens under the data retention program."
+    />
+    <meta name="twitter:site" content="@squawkcc" />
+    <meta name="twitter:domain" content="search.squawk.cc" />
+    <meta
+      name="twitter:image"
+      content="https://squawk-search.netlify.app/logo.png"
+    />
+  </head>
+  <body>
+    <div class="pageouter">
+      <div class="pageinner">
+        <div class="block head">
+          <div class="logo"><img src="logo.png" /></div>
+          <h1>Squawk: Search History Noisifier</h1>
+          <p>
+            Creating noise-as-a-service, as an act of civil disobedience, that
+            attacks the ability to profile at-risk groups through search
+            histories.
+          </p>
+          <p>
+            Run a web site? Why not add
+            <a href="https://squawk-naas.netlify.app/"
+              ><em>Squawk: Data Retention Edition</em></a
+            >
+            today?
+          </p>
+          <p>
+            <a href="https://twitter.com/squawkcc">Follow us on twitter</a>!
+          </p>
+        </div>
 
-    <div class="block head">
-      <div class="logo"><img src="logo.png"/></div>
-      <h1>Squawk: Search History Noisifier</h1>
-      <p>Creating noise-as-a-service, as an act of civil disobedience, that attacks the ability to profile at-risk groups through search histories.</p>
-      <p>Run a web site? Why not add <a href="https://squawk.cc/"><em>Squawk: Data Retention Edition</em></a> today?
-      <p><a href="https://twitter.com/squawkcc">Follow us on twitter</a>!</p>
-    </div>
+        <div class="block usage">
+          <h2>Purpose</h2>
+          <div class="purpose">
+            <p>
+              When people search for "how do I contact the guardian
+              anonymously", or "gay support services in Nigeria", they might be
+              inadvertently putting themselves at risk.
+            </p>
+            <p>
+              <em>Squawk: Search History Noisifier</em> adds noise to Google
+              search, to make it harder to discern between real searchers (the
+              signal) and the rest (the noise). This will, perhaps, offer some
+              protection, by giving themplausible deniability.
+            </p>
+          </div>
 
-    <div class="block usage">
-      <h2>Purpose</h2>
-      <div class="purpose">
-        <p>When people search for "how do I contact the guardian anonymously", or "gay support services in Nigeria", they might be inadvertently putting themselves at risk.</p>
-        <p><em>Squawk: Search History Noisifier</em> adds noise to Google search, to make it harder to discern between real searchers (the signal) and the rest (the noise). This will, perhaps, offer some protection, by giving themplausible deniability.</p>
+          <div class="run">
+            <h3>Run</h3>
+            <p>
+              <button id="run">Run the <em>Search Engine Noisifier</em></button>
+            </p>
+            <p class="note">
+              This will open Google in a new tab, and run through a number of
+              searches.
+            </p>
+          </div>
+        </div>
+
+        <div class="block roadmap">
+          <h2>Things we want to do</h2>
+          <ul>
+            <li>Add more search strings</li>
+            <li>
+              Alter search strings dynamically, to reduce detectability of the
+              noise
+            </li>
+          </ul>
+        </div>
+
+        <div class="block contributors">
+          <h2>Contributors</h2>
+          <p>
+            This project was inspired by
+            <a href="http://ruinmysearchhistory.com/">Ruin My Search History</a
+            >.
+          </p>
+          <p>
+            The logo was designed by
+            <a href="https://twitter.com/kattekrab">@kattekrab</a> for the main
+            Squawk project.
+          </p>
+        </div>
+
+        <div class="block license">
+          <h2>License</h2>
+          <p>
+            The
+            <a href="https://github.com/bendechrai/squawk-search"
+              >squawk source code</a
+            >
+            is &copy; 2016
+            <a href="https://twitter.com/bendechrai">Ben Dechrai</a>, and made
+            available under the
+            <a
+              href="https://github.com/bendechrai/squawk-search/blob/master/LICENSE.md"
+              >GPLv3</a
+            >.
+          </p>
+        </div>
       </div>
-
-      <div class="run">
-        <h3>Run</h3>
-        <p><button id="run">Run the <em>Search Engine Noisifier</em></button></p>
-        <p class="note">This will open Google in a new tab, and run through a number of searches.</p>
-      </div>
     </div>
-
-    <div class="block roadmap">
-      <h2>Things we want to do</h2>
-      <ul>
-        <li>Add more search strings</li>
-        <li>Alter search strings dynamically, to reduce detectability of the noise</li>
-      </ul>
-    </div>
-
-    <div class="block contributors">
-      <h2>Contributors</h2>
-      <p>This project was inspired by <a href="http://ruinmysearchhistory.com/">Ruin My Search History</a>.</p>
-      <p>The logo was designed by <a href="https://twitter.com/kattekrab">@kattekrab</a> for the main Squawk project.</p>
-    </div>
-
-    <div class="block license">
-      <h2>License</h2>
-      <p>The <a href="https://github.com/bendechrai/squawk-search">squawk source code</a> is &copy; 2016 <a href="https://twitter.com/bendechrai">Ben Dechrai</a>, and made available under the <a href="https://github.com/bendechrai/squawk-search/blob/master/LICENSE.md">GPLv3</a>.</p>
-    </div>
-
-  </div></div>
-</body>
+  </body>
 </html>
